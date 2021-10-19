@@ -1,5 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const methodOverride = require('method-override')
+const routes = require('./routes')
 
 const app = express()
 const PORT = 3000
@@ -16,6 +18,8 @@ db.once('open', () => {
   console.log('mongodb connected')
 })
 
+app.use(methodOverride('_method'))
+app.use(routes)
 
 //設定路由
 app.get('/', (req, res) => {
