@@ -3,7 +3,7 @@ const express = require('express')
 //引用路由模組
 const router = express.Router()
 //引用 ShortUrl model
-const ShortUrl = require('../../models/shorturl')
+const ShortURL = require('../../models/shorturl')
 
 //定義首頁路由
 router.get('/', (req, res) => {
