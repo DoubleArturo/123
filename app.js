@@ -1,7 +1,8 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
-const routes = require('./routes')
+const bodyParser = require('body-parser')
+const routes = require('./routes/')
 const exphbs = require('express-handlebars')
 
 const app = express()
@@ -10,9 +11,8 @@ const db = mongoose.connection
 
 //設定資料庫連線
 mongoose.connect('mongodb://localhost/shortURL')
-
 //取得db連線狀態
-db.on('errer', () => {
+db.on('error', () => {
   console.log('mongodb error')
 })
 db.once('open', () => {
@@ -23,13 +23,9 @@ db.once('open', () => {
 app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
 
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 app.use(routes)
-
-//設定路由
-app.get('/', (req, res) => {
-  res.render('index')
-})
 
 //設定PORT
 app.listen(3000, () => {
