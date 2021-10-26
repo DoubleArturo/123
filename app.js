@@ -4,7 +4,6 @@ const methodOverride = require('method-override')
 const bodyParser = require('body-parser')
 const routes = require('./routes/')
 const exphbs = require('express-handlebars')
-const validUrl = require('valid-url')
 
 const app = express()
 const PORT = 3000
