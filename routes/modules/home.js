@@ -5,6 +5,7 @@ const router = express.Router()
 //引用 ShortUrl model
 const ShortURL = require('../../models/shorturl')
 const hostUrl = 'http://localhost:3000/'
+const shortUrlGenerator = require('../../public/shorten')
 
 //定義首頁路由
 router.get('/', (req, res) => {

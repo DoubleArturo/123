@@ -17,16 +17,12 @@
   {{#if originalUrl}}
   <div class="row align-items-center mr-2">
     <h6 class="col-auto mr-1">成功 ! 請使用這個連結 <a class="col-auto" href="{{ originalUrl }}" target="_blank"
-        id="copyShortUrl">{{
-        shortUrl }}</a> </h6>
-    <button type="button" class="btn btn-outline-primary col-auto" onClick="copyUrl()">COPY</button>
+        id="copyShortUrl">{{ shortUrl }}</a> </h6>
+    {{!-- <button type="button" class="btn btn-outline-primary col-auto" onClick="copyUrl()">COPY</button> --}}
   </div>
   <p class="form-text text-secondary mt-1">長網址：{{ originalUrl }}</p>
   {{/if}}
 </div>
-<script src="/public/myFunction.js"></script>
 
-<button onclick="myFunction()">Click me</button>
-<p id="demo"></p>
-
-<script src="/public/copyUrl.js"></script>
+{{!--
+<script src="/public/copyUrl.js"></script> --}}
