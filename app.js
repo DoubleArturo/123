@@ -6,7 +6,7 @@ const exphbs = require('express-handlebars')
 require('./config/mongoose')
 
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 //載入樣版引擎
 app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }))
