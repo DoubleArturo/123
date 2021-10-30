@@ -22,7 +22,7 @@ app.use(routes)
 app.use(methodOverride('_method'))
 
 //設定PORT
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log(`App is running on http://localhost:${PORT}`)
 })
 
