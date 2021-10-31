@@ -1,6 +1,9 @@
 # 短網址產生器
 使用 Node.js, Express 和 MongoDB 製作的短網址產生器。
-可以透過此網址 https://calm-depths-48841.herokuapp.com/ 玩玩看專案內容。
+
+
+## 專案展示
+可以透過此網址 https://calm-depths-48841.herokuapp.com/ 實際使用短網址服務。
 
 ## 專案目標
 - 親手打造一個兼具前端體驗與後端資料庫的網路應用程式。
@@ -15,15 +18,27 @@
 - 使用者輸入原始網址後，可產生一組 5 碼英數組合的短網址。
 - 使用者可透過短網址，連到原始網址的網頁。
 - 使用者若輸入相同的原始網址，會產生相同的短網址。
+- 使用者可以一鍵複製短網址。
 - 若使用者沒有輸入內容，就按下了送出鈕，需要防止表單送出並提示使用者。
 
 ## 專案環境
-- Node.js
-- Express.js
-- express-handlebars
-- Nodemon
-- MongoDB
-- Mongoose
+*  [Visual Studio Code](https://code.visualstudio.com/) - development environment
+*  [Node.js](https://nodejs.org/en/) & [npm](https://www.npmjs.com/) - JavaScript runtime environment
+*  [Express.js](https://expressjs.com/) - web application framework
+*  [Express-Handlebars](https://www.npmjs.com/package/express-handlebars) - template engine
+*  [MongoDB](https://www.mongodb.com/) - document-oriented database
+*  [Mongoose](https://mongoosejs.com/) - MongoDB object modeling tool(OBM)
+*  [body-parser](https://www.npmjs.com/package/body-parser) - middleware
+*  [clipboardjs](https://github.com/zenorocha/clipboard.js) - middleware
+*  [method-override](https://www.npmjs.com/package/method-override) - middleware
+
+body-parser": "^1.19.0",
+    "clipboard": "^2.0.8",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.0.11"
+
 
 ## 安裝與執行
 1. 在終端機輸入指令將此專案 clone 到本機電腦
