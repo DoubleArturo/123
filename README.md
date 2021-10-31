@@ -32,14 +32,6 @@
 *  [clipboardjs](https://github.com/zenorocha/clipboard.js) - middleware
 *  [method-override](https://www.npmjs.com/package/method-override) - middleware
 
-body-parser": "^1.19.0",
-    "clipboard": "^2.0.8",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.3.4",
-    "method-override": "^3.0.0",
-    "mongoose": "^6.0.11"
-
-
 ## 安裝與執行
 1. 在終端機輸入指令將此專案 clone 到本機電腦
 
