@@ -1,5 +1,6 @@
 # 短網址產生器
 使用 Node.js, Express 和 MongoDB 製作的短網址產生器。
+可以透過此網址 https://calm-depths-48841.herokuapp.com/ 玩玩看專案內容。
 
 ## 專案目標
 - 親手打造一個兼具前端體驗與後端資料庫的網路應用程式。
