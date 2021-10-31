@@ -18,7 +18,25 @@
   <div class="row align-items-center mr-2">
     <h6 class="col-auto mr-1">成功 ! 請使用這個連結 <a class="col-auto" href="{{ originalUrl }}" target="_blank"
         id="copyShortUrl">{{ shortUrl }}</a> </h6>
+    <button class="btn btn-success" type="button" data-clipboard-target="#copyShortUrl" id="copyBtn">Copy URL</button>
   </div>
+
+  {{!-- <div class="input-group">
+    <input type="text" class="form-control" id='shortURL' value="localhost:3000/{{short}}" readonly>
+    <div class="input-group-append" id="button-addon4">
+      <button class="btn btn-success" type="button" data-clipboard-target="#shortURL" data-clipboard-acrtion="cut"
+        id="copyBtn">Copy URL</button>
+      <a href="/"><button class="btn btn-outline-secondary" type="button">Make another</button></a>
+    </div>
+  </div> --}}
+
   <p class="form-text text-secondary mt-1">長網址：{{ originalUrl }}</p>
   {{/if}}
 </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+<script>
+  let clipBoard = new ClipboardJS('#copyBtn')
+</script>
